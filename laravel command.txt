@@ -1,0 +1,31 @@
+php artisan make:model ModelName -m
+php artisan migrate
+php artisan migrate:refresh
+
+
+
+
+php artisan make:model ModelName -mcr
+
+php artisan make:controller -r
+
+//for inject datatable
+$ php artisan migrate
+//for creating model
+$ php artisan make:model Contact
+//for creating table
+$ php artisan make:migration create_contacts_table   
+
+//for add column 
+$php artisan make:migration add_message_to_contacts_table
+// force for migrate command
+php artisan migrate --force
+
+//seeding command for insert dummy data in database for testing purpose
+php artisan make:seeder UserSeeder
+
+//for insert data by using seed
+$php artisan db:seed
+
+//for specific seeder
+$php artisan db:seed --class=UserSeeder
